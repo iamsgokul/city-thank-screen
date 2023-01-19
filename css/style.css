@@ -1,0 +1,80 @@
+body{
+  background-color: #e6e6e6;
+  padding:0;
+  margin:0;
+
+    font-family: 'Josefin Sans', sans-serif;
+  
+}
+.thankcont{
+  width:100vw;
+  height:100vh;
+  top:0;
+  left:0;
+  background-color:#e6e6e6;
+}
+
+.buildingbg{
+  position: fixed;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  background-image: url(../Building-Bg.svg);
+  background-repeat: repeat-x;
+  background-size: 600px 100%;
+
+}
+.buildingbg img.aeroplan{
+  width:60px;
+  padding-bottom:100px;
+  margin:-10px auto auto;
+  animation:30s flight infinite;
+}
+
+@keyframes flight{
+  0%{
+    transform: translateX(-200px);
+  }
+  100%{
+    transform: translateX(2500px);
+  }
+}
+
+
+.buildingbg img.boat{
+  width: 60px;
+  padding-bottom: 100px;
+  margin: 0;
+  animation: 40s boat infinite;
+  position: absolute;
+  bottom: -90px;
+}
+
+@keyframes boat{
+  0%{
+    transform: translateX(700px);
+  }
+  50%{
+    transform: translateX(400px);
+  }
+  100%{
+    transform: translateX(700px);
+  }
+}
+
+.thank-msg {
+  width: 100%;
+  position: relative;
+  top: 20%;
+  padding: 0 30%;
+  box-sizing: border-box;
+}
+
+.thank-msg h1{
+font-size:34px;
+}
+
+.thank-msg p{
+font-size:20px;
+line-height: 24px;
+}
